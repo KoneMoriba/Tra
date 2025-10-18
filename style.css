@@ -49,6 +49,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    z-index: 1;
 }
 
 .hero-background {
@@ -257,11 +258,15 @@ body {
 /* Section Styles */
 section {
     padding: 80px 0;
+    position: relative;
+    z-index: 10;
+    background: inherit;
 }
 
 .section-header {
     text-align: center;
     margin-bottom: 60px;
+    display: block;
 }
 
 .section-title {
@@ -284,6 +289,8 @@ section {
 .section-subtitle {
     font-size: 1.2rem;
     color: #64748b;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Text-Image Sections */
@@ -305,6 +312,7 @@ section {
 
 .text-content {
     padding: 2rem;
+    display: block;
 }
 
 .text-content h3 {
@@ -410,16 +418,20 @@ section {
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 0.5rem;
+    display: block;
 }
 
 .value-item p {
     font-size: 0.9rem;
     color: #64748b;
+    display: block;
 }
 
 /* About Section */
 .about {
     background: var(--light-bg);
+    position: relative;
+    z-index: 10;
 }
 
 .lead {
@@ -428,6 +440,7 @@ section {
     color: var(--secondary-color);
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    display: block;
 }
 
 .text-content p {
@@ -436,6 +449,7 @@ section {
     color: #475569;
     margin-bottom: 1.5rem;
     text-align: justify;
+    display: block;
 }
 
 .stats {
@@ -477,23 +491,30 @@ section {
     font-size: 1rem;
     color: #64748b;
     margin-top: 0.5rem;
+    display: block;
 }
 
 /* Mission Section */
 .mission-section {
     background: white;
     padding: 80px 0;
+    position: relative;
+    z-index: 10;
 }
 
 /* Values Section */
 .values-section {
     background: var(--light-bg);
     padding: 80px 0;
+    position: relative;
+    z-index: 10;
 }
 
 /* Programme Section */
 .programme {
     background: white;
+    position: relative;
+    z-index: 10;
 }
 
 .programme-grid {
@@ -586,17 +607,21 @@ section {
     color: var(--primary-color);
     margin-bottom: 1rem;
     line-height: 1.3;
+    display: block;
 }
 
 .programme-card p {
     color: #64748b;
     line-height: 1.7;
     font-size: 1.05rem;
+    display: block;
 }
 
 /* Galerie Section */
 .galerie {
     background: var(--light-bg);
+    position: relative;
+    z-index: 10;
 }
 
 .gallery-grid {
@@ -756,11 +781,13 @@ section {
     font-size: 1.3rem;
     margin-bottom: 1rem;
     color: white;
+    display: block;
 }
 
 .footer-section p {
     color: var(--text-light);
     line-height: 1.8;
+    display: block;
 }
 
 .footer-section i {

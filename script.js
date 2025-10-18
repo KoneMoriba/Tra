@@ -161,14 +161,9 @@ const statsObserver = new IntersectionObserver((entries) => {
 const statItems = document.querySelectorAll('.stat-item');
 statItems.forEach(item => statsObserver.observe(item));
 
-// Parallax effect for hero section
+// Scroll effects
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    
-    if (hero && scrolled < window.innerHeight) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-    }
     
     // Hide/show scroll indicator
     if (scrollIndicator) {
